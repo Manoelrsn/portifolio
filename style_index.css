@@ -229,15 +229,14 @@ main h4{
         justify-content: center;
     }
     .right_header{
-        margin-top: 0.5vh;
+        /*margin-top: 0.5vh;
         margin-left: 35%;
-        width: 30%;
+        width: 30%;*/
         display: none;
     }
     .right_header a{
         width: 33%;
-        display: flex;
-        justify-content: center;
+        display: none;
     }
     .right_header img{
         margin-left: 2%;
@@ -278,8 +277,7 @@ main h4{
     }
     .right_header a{
         width: 33%;
-        display: flex;
-        justify-content: center;
+        display: none;
     }
     .right_header img{
         margin-left: 2%;
