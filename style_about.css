@@ -1,0 +1,221 @@
+/*Definição de cores e configurações do portfolio*/
+body{
+    font-family: Urbanist;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+.cemporcento{
+    background-image: url(./pictures/background_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+/*Cabeçalho - Definição de links internos e mídias sociais*/
+header{
+    height: 10vh;
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.left_header{
+    width: 46%;
+    padding-left: 4%;
+    margin-top: 2%;
+
+}
+
+.current{
+    border-bottom: 1px solid white;
+}
+
+.left_header a{
+    font-size: 1.25em;
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+}
+
+.left_header a:hover{
+    color: rgba(255, 255, 255, 0.158);
+    border-bottom:1px solid rgba(255, 255, 255, 0.158);
+}
+
+.right_header{
+    width: 12%;
+    margin-left: 33%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.right_header img{
+    margin-left: 7%;
+    width: 20%;
+}
+
+/*CONTEUDO DE APRESENTAÇÃO INICIAL*/
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+}
+
+.main1{
+    width: 50%;
+    height: 50vh;
+}
+
+.main1 img{
+    margin-left: 35%;
+    margin-top: 8.4vh;
+    width: 30%;
+    border-radius: 100%;
+}
+.main2{
+    height: 41.6vh;
+    padding-top: 8.4vh;
+    width: 42%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: justify;
+    text-indent: 7%;
+}
+
+.main3{
+    height: 33vh;
+}
+.main3 h2{
+    text-align: center;
+    width: 100%;
+}
+
+.main3 .image{
+    margin-left: 10%;
+    margin-top: 8vh;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.main3 img{
+    width: 5%;
+}
+
+/*Conteudo de Reserva aos Direitos*/
+
+.rodape{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    height: 6vh;
+    font-size: 0.8em;
+    border-top: 1px solid rgba(87, 7, 7, 0);;
+}
+
+.rodape h4{
+    font-family: Anurati;
+    font-size: 2em;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 1%;
+}
+
+.rodape p{
+    width: 100%;
+}
+
+
+
+/*Responsividade Lateral*/
+@media all and (max-width: 750px) and (min-width:570px){
+/*Cabeçalho*/
+    .left_header a{
+        font-size: 0.9em;
+        padding: 3%;
+    }
+    
+/*Rodapé*/
+    .rodape h4{
+        font-size: 1.25em;
+    }
+    .direitos{
+        font-size: 0.5em;
+    }
+}
+    
+@media all and (max-width:569px) and (min-width:371px){
+/*Cabeçalho*/    
+    .left_header a{
+        font-size: 0.6em;
+        padding: 3%;
+    }
+    
+/*Rodapé*/
+    .rodape h4{
+        font-size: 1.25em;
+    }
+    .direitos{
+        font-size: 0.5em;
+    }
+}
+    
+@media all and (max-width:370px) and (min-width:260px){
+/*Cabeçalho*/
+    .left_header{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .left_header a{
+        font-size:0.6em;
+    }
+    .right_header{
+        width: 100%;
+        padding-top: 2%;
+        margin: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .right_header a{
+        width: 10%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .right_header img{
+        width: 40%;
+    }
+
+/*Rodapé*/
+    .rodape h4{
+        font-size: 0.75em;
+    }   
+    .direitos{
+        font-size: 0.3em;
+    }
+}
+
+
+
+
+@font-face { /*title of Logo: Manoel Rocha*/
+    font-family: Anurati;
+    src: url(./font-text/Anurati-Regular.otf);
+}
+
+@font-face { /*title of all: Manoel Rocha*/
+    font-family: Urbanist;
+    src: url(./font-text/Urbanist.ttf);
+}
