@@ -1,0 +1,204 @@
+/*Inicio da configuração*/
+
+
+/*Media Queries - Responsividade Lateral*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(./pictures/background_image.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+    font-family: Urbanist;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Cabeçalho - Definição de links internos e mídias sociais*/
+header{
+    height: 10vh;
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_header{
+    width: 45vw;
+    height: 10vh;
+    padding:0vh 0% 0vh 5vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.left_header a{
+    text-decoration: none;
+    color: white;
+    height: 3.6vh;
+    margin: 5vh 1vw 0vh 0vw;
+    padding: 0vh 1vw 1vh 1vw;
+    font-size: 1.3vw;
+}
+
+.left_header a:hover{
+    color: rgba(255, 255, 255, 0.158);
+    border-bottom:0.4vh solid rgba(255, 255, 255, 0.158);
+}
+
+.current{
+    border-bottom: 0.4vh solid white;
+}
+
+.right_header{
+    width: 45vw;
+    margin: 0vh 5vw 0vh 0vw;
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+}
+
+.right_header a{
+    height: 4vh;
+    margin: 6vh 0vw 0vh 1vw;
+}
+
+.right_header a img {
+    height: 4vh;
+}
+
+/*Main- Conteudo de Apresentação Principal da Página Home de Abertura*/
+main{
+    width: 100vw;
+    height: 84vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 8vw;
+}
+
+main p{
+    font-family: Anurati;
+}
+
+/*Rodapé - Conteudo de Reserva aos Direitos*/
+.rodape{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-between;
+    height: 6vh;
+}
+
+.direitos{
+    height: 3vh;
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.rodape h4{
+    font-family: Anurati;
+    height: 6vh;
+    width: 3vw;
+    padding: 0vh 5vw 0vh 2vw;
+    font-size:1.9vw;
+}
+
+
+/*Medias Queries - Responsividade*/
+
+@media all and (orientation:portrait){
+
+/*Cabeçalho - Definição de links internos e mídias sociais*/
+.left_header{
+    width: 100vw;
+    height: 6vh;
+    padding:0vh 0% 0vh 0vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.left_header a{
+    height: 3.6vh;
+    margin: 1vh 1vw 0vh 0vw;
+    padding: 0vh 1vw 1vh 1vw;
+    font-size: 4vw;
+}
+
+.right_header{
+    width: 100vw;
+    margin: 0vh 0vw 0vh 0vw;
+    height: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.right_header a{
+    height: 3vh;
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.right_header a img {
+    height: 3vh;
+}
+
+/*Main- Conteudo de Apresentação Principal da Página Home de Abertura*/
+main{
+    height: 83vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Rodapé - Conteudo de Reserva aos Direitos*/
+.rodape{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-between;
+    height: 6vh;
+    width: 100vw;
+}
+
+.direitos{
+    height: 2vh;
+    width: 70vw;
+    margin-left: 15vw;
+    font-size: 2.5vw;
+}
+
+.rodape h4{
+    height: 4vh;
+    font-family: Anurati;
+    width: 10vw;
+    padding: 0vh 5vw 0vh 0vw;
+    font-size:6vw;
+}
+}
+
+/*Importação de fontes necessárias para o Design*/
+
+@font-face { /*fonte of Logo: Manoel Rocha*/
+    font-family: Anurati;
+    src: url(./font-text/Anurati-Regular.otf);
+}
+
+@font-face { /*fonte of all: Manoel Rocha*/
+    font-family: Urbanist;
+    src: url(./font-text/Urbanist.ttf);
+}
+
