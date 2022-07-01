@@ -1,221 +1,312 @@
-/*Definição de cores e configurações do portfolio*/
-body{
-    font-family: Urbanist;
-    color: rgb(255, 255, 255);
+/*Inicio da configuração*/
+
+
+/*Media Queries - Responsividade Lateral*/
+*{
     margin: 0px;
+    padding: 0px;
 }
 
-.cemporcento{
+body{
     background-image: url(./pictures/background_image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+    font-family: Urbanist;
+    margin: 0px;
+    padding: 0px;
     height: 100vh;
     width: 100vw;
 }
+
 /*Cabeçalho - Definição de links internos e mídias sociais*/
 header{
     height: 10vh;
     margin: 0px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .left_header{
-    width: 46%;
-    padding-left: 4%;
-    margin-top: 2%;
-
-}
-
-.current{
-    border-bottom: 1px solid white;
+    width: 45vw;
+    height: 10vh;
+    padding:0vh 0% 0vh 5vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 .left_header a{
-    font-size: 1.25em;
     text-decoration: none;
     color: white;
-    padding: 2%;
+    height: 3.6vh;
+    margin: 5vh 1vw 0vh 0vw;
+    padding: 0vh 1vw 1vh 1vw;
+    font-size: 1.3vw;
 }
 
 .left_header a:hover{
     color: rgba(255, 255, 255, 0.158);
-    border-bottom:1px solid rgba(255, 255, 255, 0.158);
+    border-bottom:0.4vh solid rgba(255, 255, 255, 0.158);
+}
+
+.current{
+    border-bottom: 0.4vh solid white;
 }
 
 .right_header{
-    width: 12%;
-    margin-left: 33%;
-    margin-right: 5%;
-    margin-top: 2%;
+    width: 45vw;
+    margin: 0vh 5vw 0vh 0vw;
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
 }
 
-.right_header img{
-    margin-left: 7%;
-    width: 20%;
+.right_header a{
+    height: 4vh;
+    margin: 6vh 0vw 0vh 1vw;
 }
 
-/*CONTEUDO DE APRESENTAÇÃO INICIAL*/
+.right_header a img {
+    height: 4vh;
+}
+
+/*Main- Conteudo de Apresentação Principal da Página Home de Abertura*/
 main{
+    width: 100vw;
+    height: 84vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    height: 83vh;
+    text-align: center;
 }
 
 .main1{
-    width: 50%;
+    width: 50vw;
     height: 50vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .main1 img{
-    margin-left: 35%;
-    margin-top: 8.4vh;
-    width: 30%;
-    border-radius: 100%;
+    height: 30vh;
+    width: auto;
+    border-radius: 100vw;
 }
+
 .main2{
-    height: 41.6vh;
-    padding-top: 8.4vh;
-    width: 42%;
-    padding-left: 4%;
-    padding-right: 4%;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.main2 h3{
+    height: 8vh;
+    width: 93vw;
+    text-align: center;
+    padding: 12vh 5vw 0vh 2vw;
+    font-size: 1.5vw;
+}
+
+.main2 p{
+    height: 12vh;
+    width: 93vw;
+    padding: 3vh 5vw 15vh 2vw;
     text-align: justify;
-    text-indent: 7%;
+    text-indent: 6vw;
+    font-size: 1.2vw;
 }
 
 .main3{
-    height: 33vh;
-}
-.main3 h2{
-    text-align: center;
     width: 100%;
+    height: 34vh;
 }
 
-.main3 .image{
-    margin-left: 10%;
-    margin-top: 8vh;
-    width: 80%;
+main h2{
+    width: 100vw;
+    height: 8vh;
+    padding: 2vh 0vw 0vh 0vw;
+    font-size: 2.7vw;
+}
+
+main .image{
+    width: 92vw;
+    height: 24vh;
+    padding: 0vh 4vw 0vh;
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     justify-content: space-around;
 }
 
-.main3 img{
-    width: 5%;
+main .image img{
+    width: 4%;
 }
 
-/*Conteudo de Reserva aos Direitos*/
-
+/*Rodapé - Conteudo de Reserva aos Direitos*/
 .rodape{
     display: flex;
     flex-flow: row wrap;
-    text-align: center;
+    align-items: center;
+    justify-content:space-between;
     height: 6vh;
-    font-size: 0.8em;
-    border-top: 1px solid rgba(87, 7, 7, 0);;
+}
+
+.direitos{
+    height: 3vh;
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+    font-size: 1vw;
 }
 
 .rodape h4{
     font-family: Anurati;
-    font-size: 2em;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    margin: 1%;
+    height: 6vh;
+    width: 3vw;
+    padding: 0vh 5vw 0vh 2vw;
+    font-size:1.9vw;
 }
 
-.rodape p{
+
+/*Medias Queries - Responsividade*/
+
+@media all and (orientation:portrait){
+
+/*Cabeçalho - Definição de links internos e mídias sociais*/
+.left_header{
+    width: 100vw;
+    height: 6vh;
+    padding:0vh 0% 0vh 0vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.left_header a{
+    height: 3.6vh;
+    margin: 1vh 1vw 0vh 0vw;
+    padding: 0vh 1vw 1vh 1vw;
+    font-size: 4vw;
+}
+
+.right_header{
+    width: 100vw;
+    margin: 0vh 0vw 0vh 0vw;
+    height: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.right_header a{
+    height: 3vh;
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.right_header a img {
+    height: 3vh;
+}
+
+/*Main- Conteudo de Apresentação Principal da Página Home de Abertura*/
+.main1{
+    width: 100vw;
+    height: 27vh;
+}
+
+.main1 img{
+    height: 20vh;
+}
+
+.main2{
+    width: 100vw;
+    height: 27vh;
+}
+
+.main2 h3{
+    height: 8vh;
+    width: 94vw;
+    padding: 2vh 8vw 1vh 8vw;
+    font-size: 4vw;
+}
+
+.main2 p{
+    height: 13vh;
+    width: 90vw;
+    padding: 2vh 5vw 2vh 5vw;
+    text-indent: 7vw;
+    font-size: 3vw;
+}
+
+.main3{
     width: 100%;
+    height: 30vh;
 }
 
-
-
-/*Responsividade Lateral*/
-@media all and (max-width: 750px) and (min-width:570px){
-/*Cabeçalho*/
-    .left_header a{
-        font-size: 0.9em;
-        padding: 3%;
-    }
-    
-/*Rodapé*/
-    .rodape h4{
-        font-size: 1.25em;
-    }
-    .direitos{
-        font-size: 0.5em;
-    }
-}
-    
-@media all and (max-width:569px) and (min-width:371px){
-/*Cabeçalho*/    
-    .left_header a{
-        font-size: 0.6em;
-        padding: 3%;
-    }
-    
-/*Rodapé*/
-    .rodape h4{
-        font-size: 1.25em;
-    }
-    .direitos{
-        font-size: 0.5em;
-    }
-}
-    
-@media all and (max-width:370px) and (min-width:260px){
-/*Cabeçalho*/
-    .left_header{
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    .left_header a{
-        font-size:0.6em;
-    }
-    .right_header{
-        width: 100%;
-        padding-top: 2%;
-        margin: 0px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-    .right_header a{
-        width: 10%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .right_header img{
-        width: 40%;
-    }
-
-/*Rodapé*/
-    .rodape h4{
-        font-size: 0.75em;
-    }   
-    .direitos{
-        font-size: 0.3em;
-    }
+.main3 h2{
+    width: 100vw;
+    height: 6vh;
+    padding: 4vh 0vw 0vh 0vw;
+    font-size: 4vw;
 }
 
+.main3 .image{
+    width: 92vw;
+    height: 20vh;
+    padding: 0vh 4vw 0vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.main3 .image img{
+    width: 7vw;
+    margin: 0vh 5vw 0vh;
+}
 
+/*Rodapé - Conteudo de Reserva aos Direitos*/
+.rodape{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-between;
+    height: 6vh;
+    width: 100vw;
+}
 
-@font-face { /*title of Logo: Manoel Rocha*/
+.direitos{
+    height: 2vh;
+    width: 70vw;
+    margin-left: 15vw;
+    font-size: 2.5vw;
+}
+
+.rodape h4{
+    height: 4vh;
+    font-family: Anurati;
+    width: 10vw;
+    padding: 0vh 5vw 0vh 0vw;
+    font-size:6vw;
+}
+}
+
+/*Importação de fontes necessárias para o Design*/
+
+@font-face { /*fonte of Logo: Manoel Rocha*/
     font-family: Anurati;
     src: url(./font-text/Anurati-Regular.otf);
 }
 
-@font-face { /*title of all: Manoel Rocha*/
+@font-face { /*fonte of all: Manoel Rocha*/
     font-family: Urbanist;
     src: url(./font-text/Urbanist.ttf);
 }

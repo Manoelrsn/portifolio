@@ -1,14 +1,20 @@
-/*Definição de cores e configurações do portfolio*/
-body{
-    font-family: Urbanist;
-    color: rgb(255, 255, 255);
+/*Inicio da configuração*/
+
+
+/*Media Queries - Responsividade Lateral*/
+*{
     margin: 0px;
+    padding: 0px;
 }
 
-body .cemporcento{
+body{
     background-image: url(./pictures/background_image.png);
     background-repeat:no-repeat;
     background-size:cover;
+    color:white;
+    font-family: Urbanist;
+    margin: 0px;
+    padding: 0px;
     height: 100vh;
     width: 100vw;
 }
@@ -19,242 +25,306 @@ header{
     margin: 0px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .left_header{
-    width: 46%;
-    padding-left: 4%;
-    margin-top: 2%;
-
-}
-
-.current{
-    border-bottom: 1px solid white;
+    width: 45vw;
+    height: 10vh;
+    padding:0vh 0% 0vh 5vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 .left_header a{
-    font-size: 1.25em;
     text-decoration: none;
     color: white;
-    padding: 2%;
+    height: 3.6vh;
+    margin: 5vh 1vw 0vh 0vw;
+    padding: 0vh 1vw 1vh 1vw;
+    font-size: 1.3vw;
 }
 
 .left_header a:hover{
     color: rgba(255, 255, 255, 0.158);
-    border-bottom:1px solid rgba(255, 255, 255, 0.158);
+    border-bottom:0.4vh solid rgba(255, 255, 255, 0.158);
+}
+
+.current{
+    border-bottom: 0.4vh solid white;
 }
 
 .right_header{
-    width: 12%;
-    margin-left: 33%;
-    margin-right: 5%;
-    margin-top: 2%;
+    width: 45vw;
+    margin: 0vh 5vw 0vh 0vw;
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
 }
 
-.right_header img{
-    margin-left: 7%;
-    width: 20%;
+.right_header a{
+    height: 4vh;
+    margin: 6vh 0vw 0vh 1vw;
 }
 
-/*Main - Parte Principal com o conteúdo de contatos*/
+.right_header a img {
+    height: 4vh;
+}
+
+/*Main- Conteudo de Apresentação Principal da Página Home de Abertura*/
 main{
-    width: 100%;
-    height: 83vh;
-    border-top: 1px solid rgba(255, 0, 0, 0);
+    width: 100vw;
+    height: 84vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .Questions{
-    padding-top: 3vh;
-    height: 27vh;
-    padding-left: 5%;
-    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 20vh;
+    width: 50vw;
+    padding: 20vh 0vw 20vh 0vw;
 }
 
-#one{
-    font-size: 1.1em;
-}
-
-#two{
-    font-size: 1.3em;
-}
-
-#tree{
-    font-size: 1.45em;
+#one, #two, #tree{
+    font-size: 1.5vw;
+    width: 100vw;
 }
 
 .contact{
-    height: 7vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    width: 100%;
     display: flex;
-    flex-flow:  wrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 52vh;
+    padding: 4vh 0vw;
 }
 
 .contact a{
-    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.055);
+    border:1vh 1vw;
+    width: 25vw;
+    height: 7vh;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4vw;
+}
+
+.contact a:hover{
+    background-color: black;
+    border-color: white;
+    width: 27vw;
+    height: 9vh;
+}
+
+.contact p{
+    width: 65%;
 }
 
 .contact a img{
-    width: 20%;
-    margin: 0px;
-}
-
-.contact a p{
-    text-align: center;
-    color: white;
-    width: 75%;
-    margin: 0px;
+    height: 5vh;
+    margin-right: 2vw;
+    width: auto;
 }
 
 .Social_Midia{
+    height: 18vh;
+    width: 20vw;
+    padding: 3vh 40vw;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
-    height: 17vh;
-    padding-bottom: 3vh;
-    padding-top: 6vh;
-    margin-left: 35%;
-    width: 30%;
 }
 
 .Social_Midia a{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
+    width: 5vw;
+    height: 6vh;
+    margin:0vh 0vw 0vh;
 }
 
-.Social_Midia a img{
-    width: 50%;
+.Social_Midia img{
+    width: 3vw;
 }
 
 .Social_Midia h2{
-    padding-top: 2%;
-    width: 100%;
-    text-align: center;
-    font-size: 0.9em;
+    font-size: 4vh;
+    height: 5vh;
 }
 
-/*Conteudo de Reserva aos Direitos*/
-
+/*Rodapé - Conteudo de Reserva aos Direitos*/
 .rodape{
     display: flex;
     flex-flow: row wrap;
-    text-align: center;
+    align-items: center;
+    justify-content:space-between;
     height: 6vh;
-    font-size: 0.8em;
-    border-top: 1px solid rgba(87, 7, 7, 0);;
+}
+
+.direitos{
+    height: 3vh;
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+    font-size: 1vw;
 }
 
 .rodape h4{
     font-family: Anurati;
-    font-size: 2em;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    margin: 1%;
+    height: 6vh;
+    width: 3vw;
+    padding: 0vh 5vw 0vh 2vw;
+    font-size:1.9vw;
 }
 
-.rodape p{
+
+/*Medias Queries - Responsividade*/
+
+@media all and (orientation:portrait){
+
+/*Cabeçalho - Definição de links internos e mídias sociais*/
+.left_header{
+    width: 100vw;
+    height: 6vh;
+    padding:0vh 0% 0vh 0vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.left_header a{
+    height: 3.6vh;
+    margin: 1vh 1vw 0vh 0vw;
+    padding: 0vh 1vw 1vh 1vw;
+    font-size: 4vw;
+}
+
+.right_header{
+    width: 100vw;
+    margin: 0vh 0vw 0vh 0vw;
+    height: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.right_header a{
+    height: 3vh;
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.right_header a img {
+    height: 3vh;
+}
+
+/*Main- Conteudo de Apresentação Principal da Página Home de Abertura*/
+main{
+    height: 83vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Questions{
     width: 100%;
+    height: 15vh;
+    padding: 10vh 0vw 2vh;
 }
 
-
-
-/*Responsividade Lateral*/
-@media all and (max-width: 750px) and (min-width:570px){
-/*Cabeçalho*/
-    .left_header a{
-        font-size: 0.9em;
-        padding: 3%;
-    }
-        
-/*Rodapé*/
-    .rodape h4{
-        font-size: 1.25em;
-    }
-    .direitos{
-        font-size: 0.5em;
-    }
+#one, #two, #tree{
+    font-size: 4vw;
 }
-        
-@media all and (max-width:569px) and (min-width:371px){
-/*Cabeçalho*/    
-    .left_header a{
-        font-size: 0.6em;
-        padding: 3%;
-    }
-        
-/*Rodapé*/
-    .rodape h4{
-        font-size: 1.25em;
-    }
-    .direitos{
-        font-size: 0.5em;
-    }
-}
-        
-@media all and (max-width:370px) and (min-width:260px){
-/*Cabeçalho*/
-    .left_header{
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    .left_header a{
-        font-size:0.6em;
-    }
-    .right_header{
-        width: 100%;
-        padding-top: 2%;
-        margin: 0px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-    .right_header a{
-        width: 10%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .right_header img{
-        width: 40%;
-    }
-    
-/*Rodapé*/
-    .rodape h4{
-        font-size: 0.75em;
-    }
-    .direitos{
-        font-size: 0.3em;
-    }
-}
-    
 
+.contact{
+    width: 100%;
+    height: 30vh;
+    padding: 0vh 0vw 0vh;
+}
 
-@font-face { /*title of Logo: Manoel Rocha*/
+.contact a{
+    margin: 0vh 2vw;
+}
+
+.contact a img{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact a p{
+    width: 100vw;
+    font-size: 1.8vw;
+}
+
+.Social_Midia{
+    width: 100vw;
+    height: 20vh;
+    padding: 3vh 0vw 3vh;
+}
+
+.Social_Midia a{
+    width: 10%;
+    margin: 0vh 2vw;
+}
+
+.Social_Midia a img{
+    width: 80%;
+}
+
+.Social_Midia h2{
+    width: 100vw;
+    font-size: 4.5vw;
+}
+
+/*Rodapé - Conteudo de Reserva aos Direitos*/
+.rodape{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-between;
+    height: 6vh;
+    width: 100vw;
+}
+
+.direitos{
+    height: 2vh;
+    width: 70vw;
+    margin-left: 15vw;
+    font-size: 2.5vw;
+}
+
+.rodape h4{
+    height: 4vh;
+    font-family: Anurati;
+    width: 10vw;
+    padding: 0vh 5vw 0vh 0vw;
+    font-size:6vw;
+}
+}
+
+/*Importação de fontes necessárias para o Design*/
+
+@font-face { /*fonte of Logo: Manoel Rocha*/
     font-family: Anurati;
     src: url(./font-text/Anurati-Regular.otf);
 }
 
-@font-face { /*title of all: Manoel Rocha*/
+@font-face { /*fonte of all: Manoel Rocha*/
     font-family: Urbanist;
     src: url(./font-text/Urbanist.ttf);
 }
-
